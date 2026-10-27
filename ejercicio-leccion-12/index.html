@@ -1,0 +1,46 @@
+<!-- Ejercicio
+
+Realiza una página web que muestre dos etiquetas div hermanas de 200px de ancho y de 100px 
+de alto, con color de fondo distinto, de manera que la primera se separe del borde izquierdo 
+del body 20px, y la segunda se separe del borde izquiredo del body 40px. Además la segunda caja 
+debe aparecer encima de la mitad inferior de la primera.
+Hazte las siguientes preguntas:
+
+¿Cómo conseguimos que el segundo div se dibuje encima del primero?
+Le ponemos un margen superior negativo (margin-top: -50px).
+
+¿Por qué el primer div está separado del borde superior del body? 
+Porque el navegador le pone por su cuenta un pequeño margen de 8px al body.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Margen y relleno</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+        }
+
+        #caja1 {
+            background-color: tomato;
+            margin-left: 20px;
+        }
+
+        #caja2 {
+            background-color: steelblue;
+            margin-left: 40px;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja1"></div>
+    <div id="caja2"></div>
+</body>
+
+</html>

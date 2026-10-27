@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5</title>
+  <style>
+    .padre {
+      width: 200px;
+      border: 10px solid black;
+      padding: 20px;
+    }
+
+    .hijo {
+      width: 50%;
+      border: 2px solid black;
+      padding: 5px;
+    }
+
+    .bb,
+    .bb * {
+      box-sizing: border-box;
+    }
+
+    .padre {
+      background: lightblue;
+    }
+
+    .hijo {
+      background: lightcoral;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="padre">
+    <div class="hijo">Hijo</div>
+  </div>
+<p></p>
+  <div class="bb">
+    <div class="padre">
+      <div class="hijo">Hijo</div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- 
+1. ¿Cuántos píxeles de ancho medirá el contenido (ojo, el contenido) del div de la clase hijo?
+100px
+
+2. Si añadimos la siguiente regla CSS: 
+* {
+box-sizing: border-box;
+}
+¿Cuántos píxeles de ancho medirá el contenido (ojo, el contenido) del div de la clase hijo?"
+56px
+-->

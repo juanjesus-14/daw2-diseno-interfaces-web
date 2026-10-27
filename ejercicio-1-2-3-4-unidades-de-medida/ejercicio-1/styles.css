@@ -1,0 +1,27 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 30px;
+}
+
+.div-1 {
+    background-color: red;
+    font-size: 2em;
+}
+
+.div-2 {
+    background-color: blue;
+    font-size: 2em;
+}
+
+.div-3 {
+    background-color: green;
+    font-size: 2em;
+}
+
+.div-4 {
+    background-color: yellow;
+    font-size: 2rem;
+}
