@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+body {
+    box-sizing: content-box;
+    width: 1000px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+}
+
+header {
+    height: 100px;
+    border-bottom: 1px solid red;
+}
+
+header h1,
+footer h1 {
+    line-height: 100px;
+}
+
+nav,
+main,
+aside {
+    float: left;
+    height: 320px;
+    border: 1px solid;
+    border-top: none;
+}
+
+nav {
+    width: 200px;
+    border-color: blue;
+}
+
+main {
+    width: 600px;
+    border-color: green;
+}
+
+aside {
+    width: 200px;
+    border-color: blue;
+}
+
+footer {
+    clear: both;
+    height: 100px;
+}
