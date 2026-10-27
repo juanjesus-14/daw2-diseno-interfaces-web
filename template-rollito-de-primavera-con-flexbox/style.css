@@ -1,0 +1,181 @@
+
+
+/* Nota: para poder utilizar la fuente debéis importarla en LA cabecera del HTML:
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto" rel="stylesheet">
+*/
+
+
+html {
+  /* COLORS */
+  --header_background_color: #484432;
+  --text_light_color: #FFFFFF;
+  --body_background_color: #FAFAF5;
+  --main_background_color: #FFFFFF;
+  --section_header_color: #8BAD00;
+  --nav_item_background: #FF7F00;
+  --nav_item_border: #A95400;
+  --nav_item_background_hover: #D16800;
+  --footer_link: #FFB266;
+  --footer_link_hover: #FF860F;
+  /* DIMENS */
+  --horizontal_margin: 2rem;
+  --vertical_margin: 1rem;
+  --foto_min_width: 18rem;
+  --up_icon_width: 3.2rem;
+  --body_font_size: 2rem;
+  /* FONTS */
+  --header_font: 'Merriweather', serif;
+  --main_font: 'Roboto', sans-serif;
+  --title_font: 'Open Sans', sans-serif;
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--main_font);
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ================================== */
+
+body {
+  background-color: var(--body_background_color);
+  font-size: var(--body_font_size);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: var(--main_background_color);
+}
+
+/*  HEADER  */
+.header {
+  display: flex;
+  justify-content: center;
+  padding: var(--vertical_margin);
+  background-color: var(--header_background_color);
+  color: var(--text_light_color);
+}
+
+.header__title {
+  font-family: var(--header_font);
+  font-size: 3.6rem;
+}
+
+/*  NAV  */
+.nav {
+  padding: var(--vertical_margin) var(--horizontal_margin);
+}
+
+.nav ul {
+  display: flex;
+  gap: var(--vertical_margin);
+  list-style: none;
+}
+
+.nav__item__link {
+  padding: 0.4rem 1rem;
+  font-size: 1.4rem;
+  color: var(--text_light_color);
+  text-decoration: none;
+  background-color: var(--nav_item_background);
+  border: 0.1rem solid var(--nav_item_border);
+}
+
+.nav__item__link:hover {
+  background-color: var(--nav_item_background_hover);
+}
+
+/*  SECCIONES  */
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: var(--vertical_margin) var(--horizontal_margin);
+}
+
+.section__title {
+  margin-bottom: var(--vertical_margin);
+  font-family: var(--title_font);
+  font-size: 2.2rem;
+  color: var(--section_header_color);
+  border-bottom: 0.2rem solid var(--section_header_color);
+}
+
+.section__content {
+  font-family: var(--title_font);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.section__content p {
+  margin-bottom: var(--vertical_margin);
+}
+
+.section__up {
+  align-self: flex-end;
+}
+
+.section__up__icon {
+  width: var(--up_icon_width);
+}
+
+/*  LISTAS  */
+.section__content ul {
+  list-style-image: url("img/tenedor.png");
+  padding-left: var(--horizontal_margin);
+}
+
+.section__content ol {
+  padding-left: var(--horizontal_margin);
+}
+
+/*  FOTOGRAFÍAS  */
+#fotos .section__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--vertical_margin);
+}
+
+#fotos figure {
+  flex: 1;
+  min-width: var(--foto_min_width);
+}
+
+#fotos figure img {
+  width: 100%;
+  display: block;
+}
+
+#fotos figcaption {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--text_light_color);
+  background-color: var(--header_background_color);
+}
+
+/*  FOOTER  */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: var(--vertical_margin);
+  background-color: var(--header_background_color);
+  color: var(--text_light_color);
+  font-size: 1.2rem;
+}
+
+.footer__link {
+  color: var(--footer_link);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: var(--footer_link_hover);
+}
